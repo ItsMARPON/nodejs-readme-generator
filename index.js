@@ -25,32 +25,31 @@ const questions = [
     name: "usage",
   },
   {
-    type: "list",
+    type: "checkbox",
     message:
       "List your collaborators, if any, with links to their GitHub profiles?",
     choices: [
-      "Choice A: https://github.com/coding-boot-camp/potential-enigma",
-      "Choice B: https://www.npmjs.com/package/inquirer/v/8.2.4#questions",
-      "Choice C: No One",
+      "Starter Code: https://github.com/coding-boot-camp/potential-enigma",
+      "NPM: https://www.npmjs.com/package/inquirer/v/8.2.4#questions",
+      "N/A: No One",
     ],
-    default: "Choice A: https://github.com/coding-boot-camp/potential-enigma",
     name: "credits",
   },
   {
     type: "list",
     message: "What are the guidelines for contributing to this application?",
     choices: [
-      "Choice A: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
-      "Choice B: None",
+      "Code of conduct: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
+      "N/A: None",
     ],
     default:
-      "Choice A: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
+      "Code of conduct: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md",
     name: "contribute",
   },
   {
     type: "list",
     message: "What are the tests for this application?",
-    choices: ["Choice A: node test/tests"],
+    choices: ["1: node test/tests"],
     default: "test/tests",
     name: "tests",
   },
@@ -72,11 +71,7 @@ const questions = [
   {
     type: "list",
     message: "Choose a license for the application",
-    choices: [
-      "Choice A: Apache License 2.0",
-      "Choice B: MIT License",
-      "Choice C: GNU GPLv2.0",
-    ],
+    choices: ["1: Apache License 2.0", "2: MIT License", "3: GNU GPLv2.0"],
     default: "MIT License",
     name: "license",
   },
@@ -84,9 +79,9 @@ const questions = [
     type: "list",
     message: "Status Badge",
     choices: [
-      "Choice A: Apache License 2.0 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-      "Choice B: MIT License",
-      "Choice C: GNU GPLv2.0 ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
+      "1: Apache License 2.0 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+      "2: MIT License",
+      "3: GNU GPLv2.0 ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
     ],
     default:
       "MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
@@ -128,6 +123,8 @@ ${response.installation}
 
 ## Usage <a name="usage"></a>
 ${response.usage}
+<br />
+![screenshot of command line](./assets/images/nodejs-readme.png)
 
 ## Credits <a name="credits"></a>
 ${response.credits}
@@ -146,8 +143,11 @@ ${response.badge}
 
 ## Questions <a name="questions"></a>
 Contact me with questions at the following links:
+<br />
 ${response.github}
+<br />
 ${response.githuburl}
+<br />
 ${response.email}
       `,
       (err) => (err ? console.error(err) : console.log("Success!"))
