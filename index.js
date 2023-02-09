@@ -29,8 +29,8 @@ const questions = [
     message:
       "List your collaborators, if any, with links to their GitHub profiles?",
     choices: [
-      "[Starter Code]: https://github.com/coding-boot-camp/potential-enigma",
-      "[NPM]: https://www.npmjs.com/package/inquirer/v/8.2.4#questions",
+      "[Starter Code]: https://github.com/coding-boot-camp/potential-enigma ",
+      "[NPM]: https://www.npmjs.com/package/inquirer/v/8.2.4#questions ",
       "N/A: No One",
     ],
     name: "credits",
