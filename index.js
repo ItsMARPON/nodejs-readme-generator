@@ -71,7 +71,11 @@ const questions = [
   {
     type: "list",
     message: "Choose a license for the application",
-    choices: ["Apache License 2.0", "MIT License", "GNU GPLv2.0"],
+    choices: [
+      "Apache License 2.0 (https://opensource.org/licenses/Apache-2.0)",
+      "MIT License (https://opensource.org/licenses/MIT)",
+      "GNU GPLv2.0 (https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
+    ],
     default: "MIT License",
     name: "license",
   },
@@ -79,12 +83,12 @@ const questions = [
     type: "list",
     message: "Status Badge",
     choices: [
-      "1: ![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)",
-      "2: ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)",
-      "3: ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
+      "![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)",
+      "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
+      "![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)",
     ],
     default:
-      "MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+      "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
     name: "badge",
   },
 ];
