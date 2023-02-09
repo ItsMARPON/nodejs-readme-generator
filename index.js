@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const questions = [
   {
     type: "input",
@@ -79,23 +79,20 @@ const questions = [
     type: "list",
     message: "Status Badge",
     choices: [
-      "1: Apache License 2.0 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-      "2: MIT License",
-      "3: GNU GPLv2.0 ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
+      "1: Apache License 2.0 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)",
+      "2: MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)",
+      "3: GNU GPLv2.0 ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
     ],
     default:
       "MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
     name: "badge",
   },
 ];
-
-inquirer
-  .prompt(questions)
-  // TODO: Create a function to write README file
-  .then((response) =>
-    fs.writeFile(
-      "README.md",
-      `# ${response.projecttitle}
+// A function to write README.md file
+inquirer.prompt(questions).then((response) =>
+  fs.writeFile(
+    "README.md",
+    `# ${response.projecttitle} ${response.badge}
         
 ## Description
 ${response.description}
@@ -150,9 +147,9 @@ ${response.githuburl}
 <br />
 ${response.email}
       `,
-      (err) => (err ? console.error(err) : console.log("Success!"))
-    )
-  );
+    (err) => (err ? console.error(err) : console.log("Success!"))
+  )
+);
 
 // // TODO: Create a function to initialize app
 // function init() {}
