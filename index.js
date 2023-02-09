@@ -126,6 +126,10 @@ ${response.installation}
 ${response.usage}
 <br />
 ![screenshot of command line](./assets/images/nodejs-readme.png)
+<br />
+![screenshot top of README.md](./assets/images/nodejs-readme-github1.png)
+<br/>
+![screenshot bottom of README.md](./assets/images/nodejs-readme-github2.png)
 
 ## Credits <a name="credits"></a>
 ${response.credits}
