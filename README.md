@@ -1,7 +1,7 @@
-# LOOK
+# Nodejs README Generator 2: MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
         
 ## Description
-WHAT
+I want to create a high-quality professional README generated with user input on the command line. The title and sections with details.
 
 ## Table of Contents
 
@@ -22,15 +22,15 @@ WHAT
 - [Questions](#questions)
 
 ## Installation <a name="installation"></a>
-IS
+Install Node.js version 16 and Install npm i inquirer
 
 ## Usage <a name="usage"></a>
-HAPPENING
+In the command line of GitBash, type "node index.js" to run the application.
 <br />
 ![screenshot of command line](./assets/images/nodejs-readme.png)
 
 ## Credits <a name="credits"></a>
-
+Starter Code: https://github.com/coding-boot-camp/potential-enigma,NPM: https://www.npmjs.com/package/inquirer/v/8.2.4#questions
 
 ## Contributing <a name="contributing"></a>
 Code of conduct: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
@@ -39,17 +39,17 @@ Code of conduct: https://www.contributor-covenant.org/version/2/1/code_of_conduc
 1: node test/tests
 
 ## License <a name="license"></a>
-1: Apache License 2.0
+2: MIT License
 
 ## Badges <a name="badges"></a>
-1: Apache License 2.0 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+2: MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
 
 ## Questions <a name="questions"></a>
 Contact me with questions at the following links:
 <br />
-NO ONE
+itsMARPON
 <br />
-NONE
+https://github.com/ItsMARPON?tab=repositories
 <br />
-NONE
+itsmagicalABC@gmail.com
       
