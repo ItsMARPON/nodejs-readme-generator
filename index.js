@@ -29,8 +29,8 @@ const questions = [
     message:
       "List your collaborators, if any, with links to their GitHub profiles?",
     choices: [
-      "Starter Code: https://github.com/coding-boot-camp/potential-enigma",
-      "NPM: https://www.npmjs.com/package/inquirer/v/8.2.4#questions",
+      "[Starter Code]: https://github.com/coding-boot-camp/potential-enigma",
+      "[NPM]: https://www.npmjs.com/package/inquirer/v/8.2.4#questions",
       "N/A: No One",
     ],
     name: "credits",
@@ -49,7 +49,7 @@ const questions = [
   {
     type: "list",
     message: "What are the tests for this application?",
-    choices: ["1: node test/tests"],
+    choices: ["node test/tests"],
     default: "test/tests",
     name: "tests",
   },
@@ -71,7 +71,7 @@ const questions = [
   {
     type: "list",
     message: "Choose a license for the application",
-    choices: ["1: Apache License 2.0", "2: MIT License", "3: GNU GPLv2.0"],
+    choices: ["Apache License 2.0", "MIT License", "GNU GPLv2.0"],
     default: "MIT License",
     name: "license",
   },
@@ -79,9 +79,9 @@ const questions = [
     type: "list",
     message: "Status Badge",
     choices: [
-      "1: Apache License 2.0 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)",
-      "2: MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)",
-      "3: GNU GPLv2.0 ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
+      "1: ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)",
+      "2: ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)",
+      "3: ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)",
     ],
     default:
       "MIT License ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
