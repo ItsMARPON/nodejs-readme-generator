@@ -45,9 +45,9 @@ MIT License (https://opensource.org/licenses/MIT)
 ## Questions <a name="questions"></a>
 Contact me with questions at the following links:
 <br />
-itsMARPON
+GitHub User Name: itsMARPON
 <br />
-https://github.com/ItsMARPON?tab=repositories
+GitHub URL: https://github.com/ItsMARPON?tab=repositories
 <br />
-itsmaryyang@gmail.com
+Email: itsmaryyang@gmail.com
       
