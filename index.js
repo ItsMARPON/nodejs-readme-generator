@@ -95,7 +95,7 @@ const questions = [
 // A function to write README.md file
 inquirer.prompt(questions).then((response) =>
   fs.writeFile(
-    "README.md",
+    "./dist/README.md",
     `# ${response.projecttitle} ${response.badge}
         
 ## Description
