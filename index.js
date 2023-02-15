@@ -95,7 +95,7 @@ const questions = [
 // A function to write README.md file
 inquirer.prompt(questions).then((response) =>
   fs.writeFile(
-    "README.md",
+    "./dist/README.md",
     `# ${response.projecttitle} ${response.badge}
         
 ## Description
@@ -124,12 +124,6 @@ ${response.installation}
 
 ## Usage <a name="usage"></a>
 ${response.usage}
-<br />
-![screenshot of command line](./assets/images/nodejs-readme.png)
-<br />
-![screenshot top of README.md](./assets/images/nodejs-readme-github1.png)
-<br/>
-![screenshot bottom of README.md](./assets/images/nodejs-readme-github2.png)
 
 ## Credits <a name="credits"></a>
 ${response.credits}
@@ -158,9 +152,3 @@ ${response.email}
     (err) => (err ? console.error(err) : console.log("Success!"))
   )
 );
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
