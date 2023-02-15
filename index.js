@@ -143,11 +143,11 @@ ${response.badge}
 ## Questions <a name="questions"></a>
 Contact me with questions at the following links:
 <br />
-${response.github}
+GitHub User Name: ${response.github}
 <br />
-${response.githuburl}
+GitHub URL: ${response.githuburl}
 <br />
-${response.email}
+Email: ${response.email}
       `,
     (err) => (err ? console.error(err) : console.log("Success!"))
   )
