@@ -124,6 +124,7 @@ ${response.installation}
 
 ## Usage <a name="usage"></a>
 ${response.usage}
+![screenshot of Nodejs README generator in GitHub](./assets/images/nodejs-readme-github1.png)
 
 ## Credits <a name="credits"></a>
 ${response.credits}
