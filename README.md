@@ -28,6 +28,7 @@ Install Node.js version 16 and Install npm i inquirer
 In the command line of GitBash, type "node index.js" to run the application.
 ![screenshot of Nodejs README generator in GitHub](./assets/images/nodejs-readme-github1.png)
 <br />
+[video walkthrough demontration of application](https://watch.screencastify.com/v/1JE7WDChtuIjlMdwkAvW)
 
 ## Credits <a name="credits"></a>
 [Starter Code]: https://github.com/coding-boot-camp/potential-enigma ,[NPM]: https://www.npmjs.com/package/inquirer/v/8.2.4#questions 
